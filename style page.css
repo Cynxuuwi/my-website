@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #000000;
+    --lighter-gray: #808080;
+    --dark-gray: #333333;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--lighter-gray);
+    padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+p.left-align {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+p.right-align {
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+}
+
+.certificate-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.certificate-gallery img {
+    width: 300px;
+    height: auto;
+    border: 6px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.certificate-gallery img:hover {
+    transform: scale(2.05);
+    border-color: #fff;
+    background-color: #000;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+    .certificate-gallery img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .certificate-gallery img {
+        width: 200px;
+    }
+}
+
+.school-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.school-logo {
+    width: 150px;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.school-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    border-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+    .school-logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    .school-logo {
+        width: 100px;
+    }
+}
+
+.social-logo {
+    width: 40px; 
+    height: auto;
+    margin-right: 15px; 
+    vertical-align: middle; 
+    transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.1); 
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+ul li {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+ul li strong {
+    margin-right: 15px; 
+}
+  .profile-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 450px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
